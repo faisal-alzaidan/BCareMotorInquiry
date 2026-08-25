@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "Motor.Inquiry.API.Controllers.MotorInquiryController",
+    "Method": "InquireVehicle",
+    "RelativePath": "api/v1/MotorInquiry/inquire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

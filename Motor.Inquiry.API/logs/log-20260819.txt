@@ -1,0 +1,172 @@
+2026-08-19 09:57:54.668 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 09:57:54.787 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 09:57:54.790 +03:00 [INF] Hosting environment: Development
+2026-08-19 09:57:54.791 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 09:57:58.776 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.html - null null
+2026-08-19 09:57:58.978 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.html - 304 null null 211.6751ms
+2026-08-19 09:57:58.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - null null
+2026-08-19 09:57:58.997 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - null null
+2026-08-19 09:57:58.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.css - null null
+2026-08-19 09:57:58.997 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-19 09:57:58.999 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.js - null null
+2026-08-19 09:57:59.034 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-19 09:57:59.047 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.js - 304 null null 47.894ms
+2026-08-19 09:57:59.051 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 17.6895ms
+2026-08-19 09:57:59.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - 304 null null 74.5404ms
+2026-08-19 09:57:59.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - 304 null null 72.3444ms
+2026-08-19 09:57:59.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.css - 304 null null 74.7882ms
+2026-08-19 09:57:59.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - 304 null null 72.9566ms
+2026-08-19 09:57:59.078 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_vs/browserLink - null null
+2026-08-19 09:57:59.108 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.9036ms
+2026-08-19 09:57:59.210 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-08-19 09:57:59.213 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - null null
+2026-08-19 09:57:59.215 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - 304 null null 2.6372ms
+2026-08-19 09:57:59.223 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9264ms
+2026-08-19 09:58:45.313 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 96
+2026-08-19 09:58:45.323 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 09:58:45.359 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-19 09:58:45.653 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-08-19 09:58:45.735 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 09:58:45.738 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 09:58:47.449 +03:00 [INF] Received HTTP response headers after 1706.9816ms - 200
+2026-08-19 09:58:47.450 +03:00 [INF] End processing HTTP request after 1717.003ms - 200
+2026-08-19 09:58:47.453 +03:00 [INF] Start processing HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 09:58:47.455 +03:00 [INF] Sending HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 09:58:47.505 +03:00 [INF] Received HTTP response headers after 49.6118ms - 200
+2026-08-19 09:58:47.506 +03:00 [INF] End processing HTTP request after 52.6119ms - 200
+2026-08-19 09:58:48.497 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-19 09:58:48.549 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto'.
+2026-08-19 09:58:48.563 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 3197.9867ms
+2026-08-19 09:58:48.564 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 09:58:48.567 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 3248.5683 ms
+2026-08-19 09:58:48.577 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 3263.4789ms
+2026-08-19 11:31:17.733 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 11:31:17.818 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 11:31:17.819 +03:00 [INF] Hosting environment: Development
+2026-08-19 11:31:17.820 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 11:31:24.352 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.html - null null
+2026-08-19 11:31:24.528 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.html - 304 null null 181.2326ms
+2026-08-19 11:31:24.543 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.css - null null
+2026-08-19 11:31:24.543 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - null null
+2026-08-19 11:31:24.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-19 11:31:24.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-19 11:31:24.543 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - null null
+2026-08-19 11:31:24.576 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.js - null null
+2026-08-19 11:31:24.585 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 8.2555ms
+2026-08-19 11:31:24.588 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.js - 304 null null 11.5646ms
+2026-08-19 11:31:24.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - 304 null null 52.1026ms
+2026-08-19 11:31:24.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - 304 null null 17.9524ms
+2026-08-19 11:31:24.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.css - 304 null null 53.254ms
+2026-08-19 11:31:24.594 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - 304 null null 53.3546ms
+2026-08-19 11:31:24.600 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_vs/browserLink - null null
+2026-08-19 11:31:24.632 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.3277ms
+2026-08-19 11:31:24.691 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-08-19 11:31:24.695 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - null null
+2026-08-19 11:31:24.698 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - 304 null null 2.9495ms
+2026-08-19 11:31:24.704 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.6443ms
+2026-08-19 11:31:36.359 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 96
+2026-08-19 11:31:36.367 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:31:36.389 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-19 11:31:36.581 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-08-19 11:31:36.648 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:31:36.650 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:31:38.061 +03:00 [INF] Received HTTP response headers after 1408.0318ms - 200
+2026-08-19 11:31:38.063 +03:00 [INF] End processing HTTP request after 1417.3907ms - 200
+2026-08-19 11:31:38.066 +03:00 [INF] Start processing HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 11:31:38.067 +03:00 [INF] Sending HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 11:31:38.166 +03:00 [INF] Received HTTP response headers after 98.3181ms - 200
+2026-08-19 11:31:38.167 +03:00 [INF] End processing HTTP request after 100.8143ms - 200
+2026-08-19 11:31:39.083 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-19 11:31:39.130 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-19 11:31:39.143 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 2749.15ms
+2026-08-19 11:31:39.145 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:31:39.148 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 2782.5058 ms
+2026-08-19 11:31:39.157 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 2798.4195ms
+2026-08-19 11:32:15.191 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 95
+2026-08-19 11:32:15.194 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:15.195 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-19 11:32:15.208 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-08-19 11:32:15.248 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 51.6437ms
+2026-08-19 11:32:15.249 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:15.250 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 400 in 55.7365 ms
+2026-08-19 11:32:15.251 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 400 null application/problem+json; charset=utf-8 59.9917ms
+2026-08-19 11:32:33.456 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 96
+2026-08-19 11:32:33.457 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:33.458 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-19 11:32:33.470 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:32:33.471 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:32:33.559 +03:00 [INF] Received HTTP response headers after 86.9902ms - 200
+2026-08-19 11:32:33.560 +03:00 [INF] End processing HTTP request after 90.5923ms - 200
+2026-08-19 11:32:33.561 +03:00 [INF] Start processing HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 11:32:33.562 +03:00 [INF] Sending HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700123456
+2026-08-19 11:32:33.568 +03:00 [INF] Received HTTP response headers after 5.2492ms - 200
+2026-08-19 11:32:33.569 +03:00 [INF] End processing HTTP request after 7.5247ms - 200
+2026-08-19 11:32:33.631 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-19 11:32:33.633 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-19 11:32:33.634 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 175.0405ms
+2026-08-19 11:32:33.635 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:33.636 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 178.3739 ms
+2026-08-19 11:32:33.637 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 181.3311ms
+2026-08-19 11:32:41.145 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 96
+2026-08-19 11:32:41.147 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:41.148 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-19 11:32:41.150 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:32:41.150 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-19 11:32:41.158 +03:00 [INF] Received HTTP response headers after 7.1812ms - 200
+2026-08-19 11:32:41.159 +03:00 [INF] End processing HTTP request after 9.4844ms - 200
+2026-08-19 11:32:41.160 +03:00 [INF] Start processing HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700143456
+2026-08-19 11:32:41.161 +03:00 [INF] Sending HTTP request GET http://localhost:5250/api/yaqeen/vehicle/700143456
+2026-08-19 11:32:41.171 +03:00 [INF] Received HTTP response headers after 9.0676ms - 404
+2026-08-19 11:32:41.172 +03:00 [INF] End processing HTTP request after 12.3946ms - 404
+2026-08-19 11:32:41.174 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-19 11:32:41.175 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 25.8272ms
+2026-08-19 11:32:41.176 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-19 11:32:41.176 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 400 in 28.9511 ms
+2026-08-19 11:32:41.177 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 400 null application/json; charset=utf-8 32.1126ms
+2026-08-19 13:02:14.206 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 13:02:14.276 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 13:02:14.278 +03:00 [INF] Hosting environment: Development
+2026-08-19 13:02:14.279 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 13:06:25.273 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 13:06:25.368 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 13:06:25.369 +03:00 [INF] Hosting environment: Development
+2026-08-19 13:06:25.371 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 14:03:03.479 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 14:03:03.569 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 14:03:03.571 +03:00 [INF] Hosting environment: Development
+2026-08-19 14:03:03.572 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 14:15:00.599 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 14:15:00.681 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 14:15:00.682 +03:00 [INF] Hosting environment: Development
+2026-08-19 14:15:00.683 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 14:20:53.417 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 14:20:53.502 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 14:20:53.503 +03:00 [INF] Hosting environment: Development
+2026-08-19 14:20:53.504 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 14:25:01.821 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 14:25:01.926 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 14:25:01.928 +03:00 [INF] Hosting environment: Development
+2026-08-19 14:25:01.929 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 15:15:30.218 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 15:15:30.392 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 15:15:30.394 +03:00 [INF] Hosting environment: Development
+2026-08-19 15:15:30.395 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-19 15:34:37.313 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-19 15:34:37.394 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-19 15:34:37.395 +03:00 [INF] Hosting environment: Development
+2026-08-19 15:34:37.395 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API

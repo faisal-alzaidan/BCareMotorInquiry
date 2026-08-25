@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/MotorInquiry/">
+    <Project Path="Motor.Inquiry.API/Motor.Inquiry.API.csproj" Id="1e0744ea-86d1-47cf-89c0-1a526d98c957" />
+    <Project Path="Motor.Inquiry.Application/Motor.Inquiry.Application.csproj" />
+    <Project Path="Motor.Inquiry.Domain/Motor.Inquiry.Domain.csproj" />
+    <Project Path="Motor.Inquiry.Infrastructure/Motor.Inquiry.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Yaqeen/">
+    <Project Path="Yaqeen.API/Yaqeen.API.csproj" Id="bc404f76-18eb-4fce-b05b-dbcffffe72e9" />
+    <Project Path="Yaqeen.Application/Yaqeen.Application.csproj" />
+    <Project Path="Yaqeen.Domain/Yaqeen.Domain.csproj" />
+    <Project Path="Yaqeen.Infrastructure/Yaqeen.Infrastructure.csproj" />
+  </Folder>
+  <Project Path="BCareMotorInquiry/BCareMotorInquiry.csproj" />
+</Solution>

@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "Yaqeen.API.Controllers.VehicleInquiryController",
+    "Method": "Inquire",
+    "RelativePath": "api/VehicleInquiry/inquire",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Yaqeen.Application.DTOs.VehicleInquiryRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Yaqeen.API.Controllers.CitizenController",
+    "Method": "ValidateCitizen",
+    "RelativePath": "api/yaqeen/citizen/validate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Yaqeen.Application.DTOs.ValidateCitizenRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Yaqeen.API.Controllers.VehicleController",
+    "Method": "GetBySequenceNumber",
+    "RelativePath": "api/yaqeen/vehicle/{sequenceNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sequenceNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Yaqeen.API.Controllers.VehicleController",
+    "Method": "GetByPlate",
+    "RelativePath": "api/yaqeen/vehicle/plate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PlateNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PlateLetters",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Yaqeen.API.Controllers.VehicleController",
+    "Method": "VerifyOwnership",
+    "RelativePath": "api/yaqeen/vehicle/verify-ownership",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sequenceNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nationalId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
