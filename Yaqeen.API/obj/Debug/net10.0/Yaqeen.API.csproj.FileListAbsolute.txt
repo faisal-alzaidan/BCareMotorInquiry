@@ -180,3 +180,4 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.API\bin\Debug\net10.0\System.Reactive.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.API\bin\Debug\net10.0\System.Reactive.Linq.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.API\bin\Debug\net10.0\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.API\bin\Debug\net10.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.API\obj\Debug\net10.0\Yaqeen.API.sourcelink.json

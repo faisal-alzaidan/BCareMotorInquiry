@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.DependencyInjection; // 1. أضف هذه المكتبة
+using Microsoft.Extensions.DependencyInjection;     
 using Yaqeen.Application.Interfaces;
 using Yaqeen.Domain.Entities;
 using Yaqeen.Infrastructure.Persistence;
@@ -9,7 +9,7 @@ namespace Yaqeen.Infrastructure.Services
 {
     public class VehicleLookupCacheService : IVehicleLookupCacheService
     {
-        private readonly IServiceScopeFactory _scopeFactory; // 2. استبدل الـ DbContext بهذا
+        private readonly IServiceScopeFactory _scopeFactory; 
         private readonly IMemoryCache _memoryCache;
         private const string MakesCacheKey = "VehicleMakes_Cache";
 
@@ -25,7 +25,6 @@ namespace Yaqeen.Infrastructure.Services
             {
                 entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromHours(24);
 
-                // 3. نفتح Scope مؤقت لجلب البيانات بأمان تام
                 using var scope = _scopeFactory.CreateScope();
                 var context = scope.ServiceProvider.GetRequiredService<YaqeenDbContext>();
 

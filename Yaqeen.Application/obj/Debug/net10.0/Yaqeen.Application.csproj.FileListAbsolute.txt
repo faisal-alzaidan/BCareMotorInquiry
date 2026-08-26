@@ -13,3 +13,4 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Appl
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\refint\Yaqeen.Application.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\ref\Yaqeen.Application.dll
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.sourcelink.json

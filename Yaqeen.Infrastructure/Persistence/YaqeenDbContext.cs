@@ -17,6 +17,7 @@ namespace Yaqeen.Infrastructure.Persistence
         public DbSet<Vehicles> Vehicles => Set<Vehicles>();
         public DbSet<VehicleMake> VehicleMakes => Set<VehicleMake>();
         public DbSet<VehicleModel> VehicleModels => Set<VehicleModel>();
+        public DbSet<MaritalStatus> MaritalStatuses => Set<MaritalStatus>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -17,3 +17,4 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\refint\Y
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.genruntimeconfig.cache
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\ref\Yaqeen.Infrastructure.dll
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.sourcelink.json

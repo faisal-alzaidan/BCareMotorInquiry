@@ -8,24 +8,23 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Yaqeen.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class AddSeedingData : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Citizens",
+                name: "MaritalStatuses",
                 columns: table => new
                 {
-                    NationalId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Nationality = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NameAr = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    NameEn = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Citizens", x => x.NationalId);
+                    table.PrimaryKey("PK_MaritalStatuses", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -40,6 +39,28 @@ namespace Yaqeen.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_VehicleMakes", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Citizens",
+                columns: table => new
+                {
+                    NationalId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gender = table.Column<int>(type: "int", nullable: false),
+                    Nationality = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MaritalStatusId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Citizens", x => x.NationalId);
+                    table.ForeignKey(
+                        name: "FK_Citizens_MaritalStatuses_MaritalStatusId",
+                        column: x => x.MaritalStatusId,
+                        principalTable: "MaritalStatuses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -95,12 +116,14 @@ namespace Yaqeen.Infrastructure.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Citizens",
-                columns: new[] { "NationalId", "DateOfBirth", "FullName", "Gender", "Nationality" },
+                table: "MaritalStatuses",
+                columns: new[] { "Id", "NameAr", "NameEn" },
                 values: new object[,]
                 {
-                    { "1011223344", new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "Faisal", "Male", "SA" },
-                    { "1099887766", new DateTime(1998, 10, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "Sara", "Female", "SA" }
+                    { 1, "أعزب", "Single" },
+                    { 2, "متزوج", "Married" },
+                    { 3, "مطلق", "Divorced" },
+                    { 4, "أرمل", "Widowed" }
                 });
 
             migrationBuilder.InsertData(
@@ -110,6 +133,15 @@ namespace Yaqeen.Infrastructure.Migrations
                 {
                     { 1, "تويوتا", "Toyota" },
                     { 2, "هونداي", "Hyundai" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Citizens",
+                columns: new[] { "NationalId", "DateOfBirth", "FullName", "Gender", "MaritalStatusId", "Nationality" },
+                values: new object[,]
+                {
+                    { "1011223344", new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), "Faisal", 1, 1, "SA" },
+                    { "1099887766", new DateTime(1998, 10, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "Sara", 2, 2, "SA" }
                 });
 
             migrationBuilder.InsertData(
@@ -129,6 +161,11 @@ namespace Yaqeen.Infrastructure.Migrations
                     { "700123456", "JT112233445566778", "White", 1, 1, 2022, "1011223344", "SSH", "1234" },
                     { "700987654", "KM887766554433221", "Silver", 2, 2, 2021, "1099887766", "HAl", "5678" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Citizens_MaritalStatusId",
+                table: "Citizens",
+                column: "MaritalStatusId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_VehicleModels_MakeId",
@@ -164,6 +201,9 @@ namespace Yaqeen.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Vehicles");
+
+            migrationBuilder.DropTable(
+                name: "MaritalStatuses");
 
             migrationBuilder.DropTable(
                 name: "VehicleModels");

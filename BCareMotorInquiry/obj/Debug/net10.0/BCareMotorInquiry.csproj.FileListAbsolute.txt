@@ -90,3 +90,4 @@ C:\aspnetcore\BCareMotorInquiry\BCareMotorInquiry\bin\Debug\net10.0\System.React
 C:\aspnetcore\BCareMotorInquiry\BCareMotorInquiry\bin\Debug\net10.0\System.Reactive.Linq.dll
 C:\aspnetcore\BCareMotorInquiry\BCareMotorInquiry\bin\Debug\net10.0\System.Runtime.InteropServices.WindowsRuntime.dll
 C:\aspnetcore\BCareMotorInquiry\BCareMotorInquiry\bin\Debug\net10.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\aspnetcore\BCareMotorInquiry\BCareMotorInquiry\obj\Debug\net10.0\BCareMotorInquiry.sourcelink.json
