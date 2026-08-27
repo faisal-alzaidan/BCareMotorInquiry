@@ -17,3 +17,4 @@ C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\obj\Debug\net10.0\M
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\obj\Debug\net10.0\Motor.In.4ED40F1D.Up2Date
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\bin\Debug\net10.0\Motor.Inquiry.Infrastructure.runtimeconfig.json
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\obj\Debug\net10.0\Motor.Inquiry.Infrastructure.genruntimeconfig.cache
+C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\obj\Debug\net10.0\Motor.Inquiry.Infrastructure.sourcelink.json

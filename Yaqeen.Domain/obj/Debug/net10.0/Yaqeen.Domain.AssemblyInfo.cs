@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yaqeen.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ffdd747d0a9282a1129ab861d61f1bf4ce3db5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b552e8cd8438ccf703770940f79660e784f0391")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yaqeen.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yaqeen.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

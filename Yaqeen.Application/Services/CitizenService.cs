@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Yaqeen.Application.Common;
 using Yaqeen.Application.Common.Exceptions;
 using Yaqeen.Application.DTOs;
@@ -26,11 +27,9 @@ namespace Yaqeen.Application.Services
 
             if (citizen.DateOfBirth.Date != request.DateOfBirth.Date)
             {
-                // رمي الاستثناء ليلقطه الميدل‌وير ويحوله تلقائياً إلى 404 Not Found
                 throw new BadRequestException("Date of birth does not match.");
             }
 
-            // رد النجاح مغلف ومرتب
             return new ApiResponse<CitizenValidationResponseDto>
             {
                 Success = true,
@@ -40,6 +39,38 @@ namespace Yaqeen.Application.Services
                     IsValid = true,
                     FullName = citizen.FullName
                 }
+            };
+        }
+
+        public async Task<ApiResponse<CitizenDetailsWithAddressesDto>> GetCitizenWithAddressesAsync(string nationalId)
+        {
+            var citizen = await _citizenRepository.GetCitizenWithAddressesAsync(nationalId);
+
+            if (citizen == null)
+            {
+                throw new NotFoundException("Citizen not found.");
+            }
+
+            var dto = new CitizenDetailsWithAddressesDto
+            {
+
+                NationalId = citizen.NationalId,
+                FullName = citizen.FullName,
+                Addresses = citizen.Addresses.Select(a => new AddressDto
+                {
+                    Id = a.Id,
+                    City = a.City,
+                    District = a.District,
+                    Street = a.Street,
+                    PostalCode = a.PostalCode
+                }).ToList()
+            };
+            return new ApiResponse<CitizenDetailsWithAddressesDto>
+            {
+                Success = true,
+                Message = "Citizen addresses retrieved successfully.",
+                Data = dto
+
             };
         }
     }

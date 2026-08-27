@@ -186,3 +186,4 @@ C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API\bin\Debug\net10.0\Serilog.Sett
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API\bin\Debug\net10.0\Serilog.Sinks.Console.dll
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API\bin\Debug\net10.0\Serilog.Sinks.File.dll
+C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API\obj\Debug\net10.0\Motor.Inquiry.API.sourcelink.json

@@ -22,6 +22,65 @@ namespace Yaqeen.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Yaqeen.Domain.Entities.Address", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("District")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NationalId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NationalId");
+
+                    b.ToTable("Addresses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            City = "الرياض",
+                            District = "الملز",
+                            NationalId = "1011223344",
+                            PostalCode = "12345",
+                            Street = "شارع الستين"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            City = "أبها",
+                            District = "الخالدية",
+                            NationalId = "1099887766",
+                            PostalCode = "54321",
+                            Street = "شارع الحزام"
+                        });
+                });
+
             modelBuilder.Entity("Yaqeen.Domain.Entities.Citizens", b =>
                 {
                     b.Property<string>("NationalId")
@@ -270,6 +329,17 @@ namespace Yaqeen.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Yaqeen.Domain.Entities.Address", b =>
+                {
+                    b.HasOne("Yaqeen.Domain.Entities.Citizens", "Citizen")
+                        .WithMany("Addresses")
+                        .HasForeignKey("NationalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Citizen");
+                });
+
             modelBuilder.Entity("Yaqeen.Domain.Entities.Citizens", b =>
                 {
                     b.HasOne("Yaqeen.Domain.Entities.MaritalStatus", "MaritalStatus")
@@ -309,6 +379,11 @@ namespace Yaqeen.Infrastructure.Migrations
                     b.Navigation("Make");
 
                     b.Navigation("Model");
+                });
+
+            modelBuilder.Entity("Yaqeen.Domain.Entities.Citizens", b =>
+                {
+                    b.Navigation("Addresses");
                 });
 
             modelBuilder.Entity("Yaqeen.Domain.Entities.MaritalStatus", b =>

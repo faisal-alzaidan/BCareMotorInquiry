@@ -13,3 +13,4 @@ C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Application\bin\Debug\net10.0\Moto
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Application\bin\Debug\net10.0\Motor.Inquiry.Domain.pdb
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Application\obj\Debug\net10.0\Motor.Inquiry.Application.csproj.AssemblyReference.cache
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Application\obj\Debug\net10.0\Motor.In.1577D753.Up2Date
+C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Application\obj\Debug\net10.0\Motor.Inquiry.Application.sourcelink.json

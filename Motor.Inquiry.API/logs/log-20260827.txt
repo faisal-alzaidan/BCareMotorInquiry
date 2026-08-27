@@ -1,0 +1,114 @@
+2026-08-27 09:32:38.525 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-27 09:32:38.622 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-27 09:32:38.623 +03:00 [INF] Hosting environment: Development
+2026-08-27 09:32:38.624 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-27 09:32:58.724 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.html - null null
+2026-08-27 09:32:58.944 +03:00 [INF] HTTP GET /swagger/index.html responded 304 in 54.3407 ms
+2026-08-27 09:32:58.958 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.html - 304 null null 246.5697ms
+2026-08-27 09:32:58.971 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - null null
+2026-08-27 09:32:58.973 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-27 09:32:58.973 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-27 09:32:58.973 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - null null
+2026-08-27 09:32:58.971 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.css - null null
+2026-08-27 09:32:58.977 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.js - null null
+2026-08-27 09:32:59.007 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 33.7466ms
+2026-08-27 09:32:59.013 +03:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.5515 ms
+2026-08-27 09:32:59.016 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.js - 304 null null 39.3084ms
+2026-08-27 09:32:59.022 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 18.8670 ms
+2026-08-27 09:32:59.022 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 43.9248 ms
+2026-08-27 09:32:59.022 +03:00 [INF] HTTP GET /swagger/index.css responded 304 in 11.3731 ms
+2026-08-27 09:32:59.022 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 12.8624 ms
+2026-08-27 09:32:59.023 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - 304 null null 49.8084ms
+2026-08-27 09:32:59.024 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - 304 null null 54.8913ms
+2026-08-27 09:32:59.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.css - 304 null null 56.5146ms
+2026-08-27 09:32:59.028 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - 304 null null 54.051ms
+2026-08-27 09:32:59.043 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_vs/browserLink - null null
+2026-08-27 09:32:59.089 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.9684ms
+2026-08-27 09:32:59.204 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-08-27 09:32:59.213 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.2745 ms
+2026-08-27 09:32:59.214 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.5397ms
+2026-08-27 09:46:39.527 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-27 09:46:39.822 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-27 09:46:39.824 +03:00 [INF] Hosting environment: Development
+2026-08-27 09:46:39.825 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-27 10:09:17.668 +03:00 [INF] Now listening on: http://localhost:5172
+2026-08-27 10:09:17.771 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-27 10:09:17.772 +03:00 [INF] Hosting environment: Development
+2026-08-27 10:09:17.774 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-08-27 10:09:28.486 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.html - null null
+2026-08-27 10:09:28.712 +03:00 [INF] HTTP GET /swagger/index.html responded 304 in 56.7947 ms
+2026-08-27 10:09:28.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.html - 304 null null 254.9467ms
+2026-08-27 10:09:28.747 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - null null
+2026-08-27 10:09:28.747 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - null null
+2026-08-27 10:09:28.747 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.css - null null
+2026-08-27 10:09:28.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-27 10:09:28.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-27 10:09:28.752 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.js - null null
+2026-08-27 10:09:28.778 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 26.6324ms
+2026-08-27 10:09:28.779 +03:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.3223 ms
+2026-08-27 10:09:28.786 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.js - 304 null null 34.6127ms
+2026-08-27 10:09:28.787 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 16.0746 ms
+2026-08-27 10:09:28.787 +03:00 [INF] HTTP GET /swagger/index.css responded 304 in 18.0458 ms
+2026-08-27 10:09:28.787 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 29.1981 ms
+2026-08-27 10:09:28.787 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 31.2832 ms
+2026-08-27 10:09:28.794 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - 304 null null 42.0356ms
+2026-08-27 10:09:28.796 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.css - 304 null null 50.0371ms
+2026-08-27 10:09:28.798 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - 304 null null 52.9345ms
+2026-08-27 10:09:28.801 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - 304 null null 55.4474ms
+2026-08-27 10:09:28.820 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_vs/browserLink - null null
+2026-08-27 10:09:28.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0908ms
+2026-08-27 10:09:28.928 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-08-27 10:09:28.944 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.7786 ms
+2026-08-27 10:09:28.948 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5942ms
+2026-08-27 10:09:28.955 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - null null
+2026-08-27 10:09:28.960 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 0.3270 ms
+2026-08-27 10:09:28.965 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/favicon-32x32.png - 304 null null 9.5114ms
+2026-08-27 10:10:53.059 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.html - null null
+2026-08-27 10:10:53.071 +03:00 [INF] HTTP GET /swagger/index.html responded 304 in 0.4608 ms
+2026-08-27 10:10:53.074 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.html - 304 null null 15.7002ms
+2026-08-27 10:10:53.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.css - null null
+2026-08-27 10:10:53.112 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - null null
+2026-08-27 10:10:53.168 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - null null
+2026-08-27 10:10:53.107 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - null null
+2026-08-27 10:10:53.169 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 0.0936 ms
+2026-08-27 10:10:53.140 +03:00 [INF] HTTP GET /swagger/index.css responded 304 in 0.1135 ms
+2026-08-27 10:10:53.140 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - null null
+2026-08-27 10:10:53.166 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/index.js - null null
+2026-08-27 10:10:53.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 3.996ms
+2026-08-27 10:10:53.176 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 0.1627 ms
+2026-08-27 10:10:53.178 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-bundle.js - 304 null null 65.8138ms
+2026-08-27 10:10:53.180 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.css - 304 null null 73.8751ms
+2026-08-27 10:10:53.184 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 0.0951 ms
+2026-08-27 10:10:53.187 +03:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.2694 ms
+2026-08-27 10:10:53.194 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui.css - 304 null null 87.9165ms
+2026-08-27 10:10:53.204 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/swagger-ui-standalone-preset.js - 304 null null 64.3495ms
+2026-08-27 10:10:53.207 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/index.js - 304 null null 65.0838ms
+2026-08-27 10:10:53.219 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/_vs/browserLink - null null
+2026-08-27 10:10:53.240 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.5141ms
+2026-08-27 10:10:53.320 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - null null
+2026-08-27 10:10:53.326 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1.7295 ms
+2026-08-27 10:10:53.329 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5172/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.7231ms
+2026-08-27 10:11:42.390 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 96
+2026-08-27 10:11:42.402 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-08-27 10:11:42.406 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-27 10:11:42.474 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-08-27 10:11:42.739 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-08-27 10:11:42.826 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-27 10:11:42.829 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-08-27 10:11:42.977 +03:00 [INF] Received HTTP response headers after 143.9958ms - 200
+2026-08-27 10:11:42.979 +03:00 [INF] End processing HTTP request after 156.2518ms - 200
+2026-08-27 10:11:44.126 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@cacheKey='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CacheKey], [v].[InquiryDate], [v].[PlateLetters], [v].[PlateNumber], [v].[ResponseJson], [v].[SequenceNumber]
+FROM [VehicleInquiryCaches] AS [v]
+WHERE [v].[CacheKey] = @cacheKey
+2026-08-27 10:11:44.399 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-08-27 10:11:44.435 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-27 10:11:44.452 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 1972.5533ms
+2026-08-27 10:11:44.454 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-08-27 10:11:44.456 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 2059.4815 ms
+2026-08-27 10:11:44.468 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 2077.6364ms

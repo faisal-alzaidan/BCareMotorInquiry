@@ -14,5 +14,6 @@ namespace Yaqeen.Domain.Entities
         public string Nationality {  get; set; }=string.Empty;
         public int MaritalStatusId { get; set; }
         public MaritalStatus MaritalStatus { get; set; } = null!;
+        public ICollection<Address> Addresses { get; set; } = new List<Address>();
     }
 }

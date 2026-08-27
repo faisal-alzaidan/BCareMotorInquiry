@@ -21,6 +21,11 @@ namespace Yaqeen.Infrastructure.Repositories
         {
             return await _context.Citizens.FirstOrDefaultAsync(c=>c.NationalId == nationalId);
         }
-
+        public async Task<Citizens?> GetCitizenWithAddressesAsync(string nationalId)
+        {
+            return await _context.Citizens
+                .Include(c => c.Addresses)
+                .FirstOrDefaultAsync(c => c.NationalId == nationalId);
+        }
     }
 }

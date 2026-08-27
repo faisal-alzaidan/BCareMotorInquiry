@@ -21,5 +21,14 @@ namespace Yaqeen.API.Controllers
         {
             return Ok(await _citizenService.ValidateCitizenAsync(request));
         }
+
+        [HttpGet("{nationalId}/addresses")]
+        public async Task<IActionResult> GetCitizenWithAddresses(string nationalId)
+        {
+            var result = await _citizenService.GetCitizenWithAddressesAsync(nationalId);
+            return Ok(result);
+
+
+        }
     }
 }
