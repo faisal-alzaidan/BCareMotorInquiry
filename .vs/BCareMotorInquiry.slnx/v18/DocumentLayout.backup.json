@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\aspnetcore\\BCareMotorInquiry\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\services\\yaqeenhttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\services\\yaqeenhttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|solutionrelative:motor.inquiry.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\settings\\yaqeensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\settings\\yaqeensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\persistence\\yaqeendbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\persistence\\yaqeendbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|solutionrelative:motor.inquiry.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\persistence\\yaqeendbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\persistence\\yaqeendbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\Program.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.API\\Program.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\Program.cs",
+              "RelativeToolTip": "Motor.Inquiry.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T12:29:55.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "YaqeenSettings.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
+              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T11:16:23.07Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
@@ -30,6 +81,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Motor.Inquiry.API\\appsettings.json",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\appsettings.json",
+              "RelativeToolTip": "Motor.Inquiry.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-30T11:20:57.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YaqeenHttpClientService.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
+              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwHoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T11:01:43.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "YaqeenDbContextFactory.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\YaqeenDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Persistence\\YaqeenDbContextFactory.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\YaqeenDbContextFactory.cs",
+              "RelativeToolTip": "Yaqeen.Infrastructure\\Persistence\\YaqeenDbContextFactory.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T11:01:41.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "YaqeenDbContext.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\YaqeenDbContext.cs",
+              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Persistence\\YaqeenDbContext.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\YaqeenDbContext.cs",
+              "RelativeToolTip": "Yaqeen.Infrastructure\\Persistence\\YaqeenDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-30T11:01:20.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
