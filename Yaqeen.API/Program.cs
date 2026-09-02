@@ -9,6 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<ApiKeyAuthAttribute>();
+
 // 2. Register Modular Extensions
 builder.Services.AddYaqeenDatabase(builder.Configuration);
 builder.Services.AddYaqeenValidation();

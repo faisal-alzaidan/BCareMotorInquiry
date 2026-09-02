@@ -65,6 +65,11 @@ namespace Motor.Inquiry.API.Middlewares
                         _ => ex.Message
                     };
                     break;
+
+                case UnauthorizedAccessException ex:
+                    statusCode = HttpStatusCode.Unauthorized; // 401
+                    message = ex.Message;
+                    break;
             }
 
             context.Response.StatusCode = (int)statusCode;

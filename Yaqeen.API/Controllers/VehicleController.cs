@@ -5,6 +5,7 @@ using Yaqeen.Application.Interfaces;
 
 namespace Yaqeen.API.Controllers
 {
+    [ServiceFilter(typeof(ApiKeyAuthAttribute))]
     [Route("api/yaqeen/vehicle")]
     [ApiController]
     public class VehicleController : ControllerBase
@@ -26,7 +27,6 @@ namespace Yaqeen.API.Controllers
         [HttpGet("plate")]
         public async Task<IActionResult> GetByPlate([FromQuery] GetVehicleByPlateRequestDto request)
         {
-            // الفاليديشن يعمل أوتوماتيكياً عبر الـ Middleware ويرجع 400 لو فيه خطأ
             var result = await _vehicleService.GetByPlateAsync(request);
             return Ok(result);
         }

@@ -5,6 +5,7 @@ using Yaqeen.Application.Interfaces;
 
 namespace Yaqeen.API.Controllers
 {
+    [ServiceFilter(typeof(ApiKeyAuthAttribute))]
     [Route("api/yaqeen/citizen")]
     [ApiController]
     public class CitizenController : ControllerBase

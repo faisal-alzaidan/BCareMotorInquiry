@@ -8,6 +8,7 @@ using FluentValidation;
 
 namespace Yaqeen.API.Controllers
 {
+    [ServiceFilter(typeof(ApiKeyAuthAttribute))]
     [Route("api/[controller]")]
     [ApiController]
     public class VehicleInquiryController : ControllerBase

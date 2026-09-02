@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;
 using System.Text;
+
 namespace Motor.Inquiry.Infrastructure.Services
 {
     public class YaqeenHttpClientService : IYaqeenClientService
@@ -22,6 +23,11 @@ namespace Motor.Inquiry.Infrastructure.Services
             _httpClient = httpClient;
             _logger = logger;
             _settings = settings.Value;
+
+            if (!string.IsNullOrEmpty(_settings.ApiKey) && !_httpClient.DefaultRequestHeaders.Contains("X-Api-Key"))
+            {
+                _httpClient.DefaultRequestHeaders.Add("X-Api-Key", _settings.ApiKey);
+            }
         }
 
         public async Task<ApiResponse<VehicleDetailsDto>> VerifyVehicleAsync(MotorInquiryRequestDto request, CancellationToken cancellationToken = default)
@@ -60,6 +66,11 @@ namespace Motor.Inquiry.Infrastructure.Services
                     }
                 }
 
+                if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    throw new UnauthorizedAccessException("Unauthorized access to Yaqeen API. Please check the API Key.");
+                }
+
                 // If Yaqeen returns 400 Bad Request or 404 Not Found, use the error helper method
                 return CreateErrorResponse("The vehicle details do not match or are not registered in the Yaqeen system.");
             }
@@ -92,6 +103,11 @@ namespace Motor.Inquiry.Infrastructure.Services
                 if (response.IsSuccessStatusCode)
                 {
                     return true;
+                }
+
+                if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+                {
+                    throw new UnauthorizedAccessException("Unauthorized access to Yaqeen API. Please check the API Key.");
                 }
 
                 if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
