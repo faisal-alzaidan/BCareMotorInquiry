@@ -15,6 +15,14 @@
         },
         "runtime": {
           "Motor.Inquiry.Application.dll": {}
+        },
+        "resources": {
+          "ar/Motor.Inquiry.Application.resources.dll": {
+            "locale": "ar"
+          },
+          "en/Motor.Inquiry.Application.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "AutoMapper/16.2.0": {

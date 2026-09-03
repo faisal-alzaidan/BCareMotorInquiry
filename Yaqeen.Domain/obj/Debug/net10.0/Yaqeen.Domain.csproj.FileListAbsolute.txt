@@ -5,8 +5,8 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.Ge
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.AssemblyInfoInputs.cache
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.AssemblyInfo.cs
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.csproj.CoreCompileInputs.cache
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.sourcelink.json
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\refint\Yaqeen.Domain.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\ref\Yaqeen.Domain.dll
-C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.sourcelink.json

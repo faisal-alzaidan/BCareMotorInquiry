@@ -25,7 +25,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddDatabaseExtensions(builder.Configuration);
 builder.Services.AddValidationAndMapping();
 builder.Services.AddApplicationServices(builder.Configuration);
-
+builder.Services.AddApiLocalization();
 builder.Services.AddHealthChecks()
     .AddDbContextCheck<AppDbContext>("Database");
 
@@ -35,6 +35,7 @@ var app = builder.Build();
 
 
 // 4. Configure the HTTP request pipeline
+app.UseApiLocalization();
 app.UseMiddleware<GlobalExceptionMiddleware>();
 app.UseSerilogRequestLogging();
 

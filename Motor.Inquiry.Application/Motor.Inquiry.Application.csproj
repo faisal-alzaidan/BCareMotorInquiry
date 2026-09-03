@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Motor.Inquiry.Domain\Motor.Inquiry.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\SharedResource.en.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

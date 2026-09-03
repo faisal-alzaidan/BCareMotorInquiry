@@ -9,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http.Json;
 using System.Text;
+using Microsoft.Extensions.Localization;
+using Motor.Inquiry.Application.Resources;
 
 namespace Motor.Inquiry.Infrastructure.Services
 {
@@ -17,12 +19,14 @@ namespace Motor.Inquiry.Infrastructure.Services
         private readonly HttpClient _httpClient;
         private readonly ILogger<YaqeenHttpClientService> _logger;
         private readonly YaqeenSettings _settings;
+        private readonly IStringLocalizer<SharedResource> _localizer;
 
-        public YaqeenHttpClientService(HttpClient httpClient, ILogger<YaqeenHttpClientService> logger, IOptions<YaqeenSettings> settings)
+        public YaqeenHttpClientService(HttpClient httpClient, ILogger<YaqeenHttpClientService> logger, IOptions<YaqeenSettings> settings, IStringLocalizer<SharedResource> localizer)
         {
             _httpClient = httpClient;
             _logger = logger;
             _settings = settings.Value;
+            _localizer = localizer;
 
             if (!string.IsNullOrEmpty(_settings.ApiKey) && !_httpClient.DefaultRequestHeaders.Contains("X-Api-Key"))
             {
@@ -68,11 +72,11 @@ namespace Motor.Inquiry.Infrastructure.Services
 
                 if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
-                    throw new UnauthorizedAccessException("Unauthorized access to Yaqeen API. Please check the API Key.");
+                    throw new UnauthorizedAccessException(_localizer["YaqeenUnauthorized"]);
                 }
 
                 // If Yaqeen returns 400 Bad Request or 404 Not Found, use the error helper method
-                return CreateErrorResponse("The vehicle details do not match or are not registered in the Yaqeen system.");
+                return CreateErrorResponse(_localizer["YaqeenVehicleMismatch"]);
             }
             catch (OperationCanceledException)
             {
@@ -82,7 +86,7 @@ namespace Motor.Inquiry.Infrastructure.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An unexpected error occurred while verifying vehicle with Yaqeen API.");
-                return CreateErrorResponse("An error occurred while communicating with Yaqeen service.");
+                return CreateErrorResponse(_localizer["YaqeenCommunicationError"]);
             }
         }
 
@@ -107,17 +111,17 @@ namespace Motor.Inquiry.Infrastructure.Services
 
                 if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
-                    throw new UnauthorizedAccessException("Unauthorized access to Yaqeen API. Please check the API Key.");
+                    throw new UnauthorizedAccessException(_localizer["YaqeenUnauthorized"]);
                 }
 
                 if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    throw new NotFoundException("Citizen not found.");
+                    throw new NotFoundException(_localizer["CitizenNotFound"]);
                 }
 
                 if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
                 {
-                    throw new BadRequestException("Invalid Date of Birth.");
+                    throw new BadRequestException(_localizer["InvalidDateOfBirth"]);
                 }
 
                 return false;

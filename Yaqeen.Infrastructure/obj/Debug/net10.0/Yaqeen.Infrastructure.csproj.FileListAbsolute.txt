@@ -11,10 +11,10 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.I
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.AssemblyInfoInputs.cache
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.AssemblyInfo.cs
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.csproj.CoreCompileInputs.cache
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.sourcelink.json
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.I.420D7999.Up2Date
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\refint\Yaqeen.Infrastructure.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.genruntimeconfig.cache
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\ref\Yaqeen.Infrastructure.dll
-C:\aspnetcore\BCareMotorInquiry\Yaqeen.Infrastructure\obj\Debug\net10.0\Yaqeen.Infrastructure.sourcelink.json

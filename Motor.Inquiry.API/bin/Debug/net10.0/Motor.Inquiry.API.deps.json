@@ -1025,6 +1025,14 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "resources": {
+          "ar/Motor.Inquiry.Application.resources.dll": {
+            "locale": "ar"
+          },
+          "en/Motor.Inquiry.Application.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "Motor.Inquiry.Domain/1.0.0": {

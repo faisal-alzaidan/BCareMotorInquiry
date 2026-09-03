@@ -3,61 +3,44 @@ using System.Threading.Tasks;
 using Motor.Inquiry.Application.Common.Exceptions;
 using Motor.Inquiry.Application.DTOs;
 using Motor.Inquiry.Application.Interfaces;
+using Microsoft.Extensions.Localization;
+using Motor.Inquiry.Application.Resources;
+
 namespace Motor.Inquiry.Application.Services
 
 {
-
     public class MotorInquiryService : IMotorInquiryService
-
     {
 
         private readonly IYaqeenClientService _yaqeenClientService;
-
         private readonly IInsuranceOfferService _insuranceOfferService;
-
         private readonly IVehicleInquiryCacheRepository _cacheRepository;
-
-
+        private readonly IStringLocalizer<SharedResource> _localizer;
 
         public MotorInquiryService(
 
         IYaqeenClientService yaqeenClientService,
-
         IInsuranceOfferService insuranceOfferService,
-
-        IVehicleInquiryCacheRepository cacheRepository)
+        IVehicleInquiryCacheRepository cacheRepository,
+        IStringLocalizer<SharedResource> localizer)
 
         {
-
             _yaqeenClientService = yaqeenClientService;
-
             _insuranceOfferService = insuranceOfferService;
-
             _cacheRepository = cacheRepository;
+            _localizer = localizer;
 
         }
-
-
-
         public async Task<ApiResponse<MotorInquiryResponseDto>> ProcessInquiryAsync(MotorInquiryRequestDto request)
 
         {
-
             var isCitizenValid = await _yaqeenClientService.ValidateCitizenAsync(request.NationalId, request.DateOfBirth);
-
-
 
             if (!isCitizenValid)
 
             {
-
-                throw new BadRequestException("Invalid National ID or Date of Birth.");
-
+                throw new BadRequestException(_localizer["Invalid National ID or Date of Birth."]);
             }
-
-
-
-            // 1. تحديد مفتاح الكاش بذكاء (إما رقم التسلسل أو دمج حروف وأرقام اللوحة)
 
             string cacheKey = !string.IsNullOrEmpty(request.SequenceNumber)
 
@@ -65,106 +48,63 @@ namespace Motor.Inquiry.Application.Services
 
             : $"{request.PlateLetters}_{request.PlateNumber}";
 
-
-
             // Check cache for existing response using the flexible cacheKey
 
-            var vehicleDetails = await _cacheRepository.GetCachedResponseAsync(request.SequenceNumber,
-
-            request.PlateLetters,
-
-            request.PlateNumber);
-
-
+            var vehicleDetails = await _cacheRepository.GetCachedResponseAsync(request.SequenceNumber,request.PlateLetters,request.PlateNumber);
 
             // if not found in cache, fetch from external service
 
             if (vehicleDetails == null)
 
             {
-
                 var yaqeenResponse = await _yaqeenClientService.VerifyVehicleAsync(request);
-
-
 
                 if (!yaqeenResponse.Success || yaqeenResponse.Data == null)
 
                 {
 
-                    throw new NotFoundException(yaqeenResponse.Message ?? "Vehicle not found.");
+                    throw new NotFoundException(_localizer["VehicleNotFound"]);
 
                 }
 
-
-
                 vehicleDetails = yaqeenResponse.Data;
-
-
 
                 // save the response in the cache using the flexible cacheKey
 
-                await _cacheRepository.SetCacheAsync(request.SequenceNumber,
-
-                request.PlateLetters,
-
-                request.PlateNumber,
-
-                vehicleDetails);
+                await _cacheRepository.SetCacheAsync(request.SequenceNumber,request.PlateLetters, request.PlateNumber, vehicleDetails);
 
             }
-
-
 
             if (vehicleDetails.OwnerNationalId != request.NationalId)
 
             {
-
-                throw new BadRequestException("Ownership mismatch: The vehicle does not belong to this citizen.");
-
+                throw new BadRequestException(_localizer["OwnershipMismatch"]);
             }
 
-
-
             var insuranceOffers = _insuranceOfferService.GetOffersForVehicle(vehicleDetails);
-
-
 
             return CreateResponse(
 
             success: true,
-
-            message: "Vehicle details fetched and insurance offers generated successfully.",
-
+            message: _localizer["VehicleFetchedSuccess"],
             vehicle: vehicleDetails,
-
             offers: insuranceOffers
 
             );
 
         }
-
-
-
         private static ApiResponse<MotorInquiryResponseDto> CreateResponse(bool success, string message, VehicleDetailsDto? vehicle, List<InsuranceOfferDto> offers)
 
         {
-
             return new ApiResponse<MotorInquiryResponseDto>
-
             {
-
                 Success = success,
-
                 Message = message,
-
                 Data = new MotorInquiryResponseDto
 
                 {
-
                     Vehicle = vehicle,
-
                     InsuranceOffers = offers
-
                 }
 
             };

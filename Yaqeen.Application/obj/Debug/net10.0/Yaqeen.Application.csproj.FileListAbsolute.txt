@@ -8,9 +8,9 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Appl
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.AssemblyInfoInputs.cache
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.AssemblyInfo.cs
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.csproj.CoreCompileInputs.cache
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.sourcelink.json
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.A.31CC3CAE.Up2Date
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\refint\Yaqeen.Application.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\ref\Yaqeen.Application.dll
-C:\aspnetcore\BCareMotorInquiry\Yaqeen.Application\obj\Debug\net10.0\Yaqeen.Application.sourcelink.json
