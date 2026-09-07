@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 
-namespace Yaqeen.API.Extensions; // تأكد إن النايمسبेस يطابق مشروع يقين
+namespace Yaqeen.API.Extensions; 
 
 public static class RateLimitingExtensions
 {

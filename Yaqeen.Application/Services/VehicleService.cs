@@ -101,6 +101,7 @@ namespace Yaqeen.Application.Services
         private static VehicleDetailsDto MapToDto(Vehicles vehicle)
 
         {
+            var currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
 
             return new VehicleDetailsDto
 
@@ -120,38 +121,19 @@ namespace Yaqeen.Application.Services
 
 
 
-                // [إضافة جديدة]: تحويل كائن الماركة (Make) إلى DTO الخاص به بأمان مع فحص الـ Null
-
                 Make = vehicle.Make != null ? new VehicleMakeDto
-
                 {
-
                     Id = vehicle.Make.Id,
-
-                    NameAr = vehicle.Make.NameAr,
-
-                    NameEn = vehicle.Make.NameEn
-
+                    Name = currentCulture == "ar" ? vehicle.Make.NameAr : vehicle.Make.NameEn
                 } : null,
 
-
-
-                // [إضافة جديدة]: تحويل كائن الموديل (Model) إلى DTO الخاص به بأمان مع فحص الـ Null
-
+                // تحويل الموديل بحسب اللغة الحالية
                 Model = vehicle.Model != null ? new VehicleModelDto
-
                 {
-
                     Id = vehicle.Model.Id,
-
-                    NameAr = vehicle.Model.NameAr,
-
-                    NameEn = vehicle.Model.NameEn
-
+                    Name = currentCulture == "ar" ? vehicle.Model.NameAr : vehicle.Model.NameEn
                 } : null
-
             };
-
         }
 
 
