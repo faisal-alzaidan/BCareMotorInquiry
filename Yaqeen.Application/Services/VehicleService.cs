@@ -5,26 +5,17 @@ using Yaqeen.Application.DTOs;
 using Yaqeen.Application.Interfaces;
 using Yaqeen.Domain.Entities;
 namespace Yaqeen.Application.Services
-
 {
-
     public class VehicleService : IVehicleService
 
     {
-
         private readonly IVehicleRepository _vehicleRepository;
-
-
 
         public VehicleService(IVehicleRepository vehicleRepository)
 
         {
-
             _vehicleRepository = vehicleRepository;
-
         }
-
-
 
         public async Task<ApiResponse<VehicleDetailsDto>> GetBySequenceNumberAsync(string sequenceNumber)
 
@@ -32,71 +23,43 @@ namespace Yaqeen.Application.Services
 
             var vehicle = await _vehicleRepository.GetBySequenceNumberAsync(sequenceNumber);
 
-
-
             if (vehicle == null)
 
             {
-
                 throw new NotFoundException("Vehicle not found.");
-
             }
-
-
 
             var dto = MapToDto(vehicle);
 
             return CreateResponse(true, "Vehicle retrieved successfully.", dto);
 
         }
-
-
-
         public async Task<ApiResponse<VehicleDetailsDto>> GetByPlateAsync(GetVehicleByPlateRequestDto request)
 
         {
-
             var vehicle = await _vehicleRepository.GetByPlateAsync(request.PlateNumber, request.PlateLetters);
-
-
 
             if (vehicle == null)
 
             {
-
                 throw new NotFoundException("Vehicle not found.");
-
             }
-
-
 
             var dto = MapToDto(vehicle);
 
             return CreateResponse(true, "Vehicle retrieved successfully.", dto);
 
         }
-
-
-
-
-
-
 
         public async Task<ApiResponse<bool>> VerifyOwnershipAsync(string sequenceNumber, string nationalId)
 
         {
-
             var isOwner = await _vehicleRepository.VerifyOwnershipAsync(sequenceNumber, nationalId);
 
             string message = isOwner ? "Ownership verified successfully." : "Vehicle ownership does not match.";
 
-
-
             return CreateResponse(true, message, isOwner);
-
         }
-
-
 
         private static VehicleDetailsDto MapToDto(Vehicles vehicle)
 
@@ -108,18 +71,11 @@ namespace Yaqeen.Application.Services
             {
 
                 SequenceNumber = vehicle.SequenceNumber,
-
                 ModelYear = vehicle.ModelYear,
-
                 Color = vehicle.Color,
-
                 PlateNumber = vehicle.PlateNumber,
-
                 PlateLetters = vehicle.PlateLetters,
-
                 OwnerNationalId = vehicle.OwnerNationalId,
-
-
 
                 Make = vehicle.Make != null ? new VehicleMakeDto
                 {
@@ -127,7 +83,6 @@ namespace Yaqeen.Application.Services
                     Name = currentCulture == "ar" ? vehicle.Make.NameAr : vehicle.Make.NameEn
                 } : null,
 
-                // تحويل الموديل بحسب اللغة الحالية
                 Model = vehicle.Model != null ? new VehicleModelDto
                 {
                     Id = vehicle.Model.Id,
@@ -136,16 +91,11 @@ namespace Yaqeen.Application.Services
             };
         }
 
-
-
         private static ApiResponse<T> CreateResponse<T>(bool success, string message, T data)
 
         {
-
             return new ApiResponse<T>
-
             {
-
                 Success = success,
 
                 Message = message,

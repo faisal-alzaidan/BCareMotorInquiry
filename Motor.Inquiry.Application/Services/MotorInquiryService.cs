@@ -42,12 +42,6 @@ namespace Motor.Inquiry.Application.Services
                 throw new BadRequestException(_localizer["Invalid National ID or Date of Birth."]);
             }
 
-            string cacheKey = !string.IsNullOrEmpty(request.SequenceNumber)
-
-            ? request.SequenceNumber
-
-            : $"{request.PlateLetters}_{request.PlateNumber}";
-
             // Check cache for existing response using the flexible cacheKey
 
             var vehicleDetails = await _cacheRepository.GetCachedResponseAsync(request.SequenceNumber,request.PlateLetters,request.PlateNumber);

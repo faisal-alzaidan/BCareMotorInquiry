@@ -23,7 +23,6 @@ namespace Motor.Inquiry.API.Controllers
         {
             var result = await _motorInquiryService.ProcessInquiryAsync(request);
 
-            await _inquiryService.ProcessInquiryAsync(request);
 
             return Ok(result);
         }

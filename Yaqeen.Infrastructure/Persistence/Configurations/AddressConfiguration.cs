@@ -40,19 +40,19 @@ namespace Yaqeen.Infrastructure.Persistence.Configurations
     new Address
     {
         Id = 1,
-        NationalId = "1011223344", // تأكد إن هذا رقم الهوية لمواطن موجود عندك بالسيد
-        City = "الرياض",
-        District = "الملز",
-        Street = "شارع الستين",
+        NationalId = "1011223344", 
+        City = "Riyadh",
+        District = "Al-Malaz",
+        Street = "Al-Sitteen Street",
         PostalCode = "12345"
     },
     new Address
     {
         Id = 2,
         NationalId = "1099887766",
-        City = "أبها",
-        District = "الخالدية",
-        Street = "شارع الحزام",
+        City = "Abha",
+        District = "Al-Khalidiyah",
+        Street = "Al-Hizam Street",
         PostalCode = "54321"
     }
 );

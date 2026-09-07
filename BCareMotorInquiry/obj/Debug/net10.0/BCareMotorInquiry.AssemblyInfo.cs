@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BCareMotorInquiry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ec91d18ce1ee96355300d68eadb02e46675da17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5e6b8a8dd7769055060dbfdac6bfcfa5d2b9077")]
 [assembly: System.Reflection.AssemblyProductAttribute("BCareMotorInquiry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BCareMotorInquiry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
