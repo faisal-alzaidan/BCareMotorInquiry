@@ -306,3 +306,103 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
 2026-09-07 09:30:34.277 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
 2026-09-07 09:30:34.281 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 3226.7691 ms
 2026-09-07 09:30:34.296 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 3288.7754ms
+2026-09-07 09:33:22.552 +03:00 [INF] Now listening on: http://localhost:5172
+2026-09-07 09:33:22.658 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 09:33:22.660 +03:00 [INF] Hosting environment: Development
+2026-09-07 09:33:22.661 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-09-07 09:33:22.862 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 100
+2026-09-07 09:33:22.914 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-07 09:33:22.920 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:33:22.945 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-09-07 09:33:23.255 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-07 09:33:23.373 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:33:23.381 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:33:25.272 +03:00 [INF] Received HTTP response headers after 1887.8093ms - 200
+2026-09-07 09:33:25.275 +03:00 [INF] End processing HTTP request after 1905.1784ms - 200
+2026-09-07 09:33:27.026 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@cacheKey='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CacheKey], [v].[InquiryDate], [v].[PlateLetters], [v].[PlateNumber], [v].[ResponseJson], [v].[SequenceNumber]
+FROM [VehicleInquiryCaches] AS [v]
+WHERE [v].[CacheKey] = @cacheKey
+2026-09-07 09:33:27.246 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-09-07 09:33:27.280 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 09:33:27.300 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 4349.7541ms
+2026-09-07 09:33:27.302 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:33:27.306 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 4399.9884 ms
+2026-09-07 09:33:27.320 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 4464.3476ms
+2026-09-07 09:46:11.420 +03:00 [INF] Now listening on: http://localhost:5172
+2026-09-07 09:46:11.533 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 09:46:11.535 +03:00 [INF] Hosting environment: Development
+2026-09-07 09:46:11.536 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-09-07 09:46:16.704 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 100
+2026-09-07 09:46:16.752 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-07 09:46:16.757 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:46:16.778 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-09-07 09:46:16.997 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-07 09:46:17.064 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:17.065 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:18.685 +03:00 [INF] Received HTTP response headers after 1616.3483ms - 200
+2026-09-07 09:46:18.687 +03:00 [INF] End processing HTTP request after 1625.3316ms - 200
+2026-09-07 09:46:20.070 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[@cacheKey='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CacheKey], [v].[InquiryDate], [v].[PlateLetters], [v].[PlateNumber], [v].[ResponseJson], [v].[SequenceNumber]
+FROM [VehicleInquiryCaches] AS [v]
+WHERE [v].[CacheKey] = @cacheKey
+2026-09-07 09:46:20.285 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-09-07 09:46:20.317 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 09:46:20.336 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 3553.0586ms
+2026-09-07 09:46:20.340 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:46:20.343 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 3598.8502 ms
+2026-09-07 09:46:20.359 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 3660.0547ms
+2026-09-07 09:46:33.278 +03:00 [INF] Now listening on: http://localhost:5172
+2026-09-07 09:46:33.400 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 09:46:33.401 +03:00 [INF] Hosting environment: Development
+2026-09-07 09:46:33.402 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-09-07 09:46:34.728 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 100
+2026-09-07 09:46:34.774 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-07 09:46:34.779 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:46:34.800 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-09-07 09:46:35.014 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-07 09:46:35.083 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:35.085 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:35.397 +03:00 [INF] Received HTTP response headers after 309.244ms - 401
+2026-09-07 09:46:35.399 +03:00 [INF] End processing HTTP request after 317.5084ms - 401
+2026-09-07 09:46:35.435 +03:00 [ERR] An unexpected error occurred while validating citizen with Yaqeen API.
+System.UnauthorizedAccessException: صلاحية غير مصرح بها لخدمة يقين. يرجى التحقق من مفتاح الـ API.
+   at Motor.Inquiry.Infrastructure.Services.YaqeenHttpClientService.ValidateCitizenAsync(String nationalId, DateTime dateOfBirth, CancellationToken cancellationToken) in C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Infrastructure\Services\YaqeenHttpClientService.cs:line 114
+2026-09-07 09:46:48.236 +03:00 [INF] Now listening on: http://localhost:5172
+2026-09-07 09:46:48.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-07 09:46:48.482 +03:00 [INF] Hosting environment: Development
+2026-09-07 09:46:48.483 +03:00 [INF] Content root path: C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.API
+2026-09-07 09:46:48.532 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - application/json 100
+2026-09-07 09:46:48.585 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-09-07 09:46:48.591 +03:00 [INF] Executing endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:46:48.615 +03:00 [INF] Route matched with {action = "InquireVehicle", controller = "MotorInquiry"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InquireVehicle(Motor.Inquiry.Application.DTOs.MotorInquiryRequestDto) on controller Motor.Inquiry.API.Controllers.MotorInquiryController (Motor.Inquiry.API).
+2026-09-07 09:46:48.851 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-09-07 09:46:48.933 +03:00 [INF] Start processing HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:48.936 +03:00 [INF] Sending HTTP request POST http://localhost:5250/api/yaqeen/citizen/validate
+2026-09-07 09:46:50.611 +03:00 [INF] Received HTTP response headers after 1670.3875ms - 200
+2026-09-07 09:46:50.615 +03:00 [INF] End processing HTTP request after 1684.2472ms - 200
+2026-09-07 09:46:51.686 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@cacheKey='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [v].[Id], [v].[CacheKey], [v].[InquiryDate], [v].[PlateLetters], [v].[PlateNumber], [v].[ResponseJson], [v].[SequenceNumber]
+FROM [VehicleInquiryCaches] AS [v]
+WHERE [v].[CacheKey] = @cacheKey
+2026-09-07 09:46:51.906 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [InquiryHistories] ([InquiryDate], [IsSuccess], [Message], [NationalId], [PlateLetters], [PlateNumber], [SequenceNumber])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-09-07 09:46:51.938 +03:00 [INF] Executing OkObjectResult, writing value of type 'Motor.Inquiry.Application.DTOs.ApiResponse`1[[Motor.Inquiry.Application.DTOs.MotorInquiryResponseDto, Motor.Inquiry.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-07 09:46:51.958 +03:00 [INF] Executed action Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API) in 3338.6372ms
+2026-09-07 09:46:51.960 +03:00 [INF] Executed endpoint 'Motor.Inquiry.API.Controllers.MotorInquiryController.InquireVehicle (Motor.Inquiry.API)'
+2026-09-07 09:46:51.964 +03:00 [INF] HTTP POST /api/v1/MotorInquiry/inquire responded 200 in 3389.2782 ms
+2026-09-07 09:46:51.977 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5172/api/v1/MotorInquiry/inquire - 200 null application/json; charset=utf-8 3450.2029ms
