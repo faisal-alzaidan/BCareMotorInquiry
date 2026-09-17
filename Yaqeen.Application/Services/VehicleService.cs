@@ -64,7 +64,7 @@ namespace Yaqeen.Application.Services
         private static VehicleDetailsDto MapToDto(Vehicles vehicle)
 
         {
-            var currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+            //var currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
 
             return new VehicleDetailsDto
 
@@ -80,13 +80,13 @@ namespace Yaqeen.Application.Services
                 Make = vehicle.Make != null ? new VehicleMakeDto
                 {
                     Id = vehicle.Make.Id,
-                    Name = currentCulture == "ar" ? vehicle.Make.NameAr : vehicle.Make.NameEn
+                    Name = vehicle.Make.NameEn ?? string.Empty
                 } : null,
 
                 Model = vehicle.Model != null ? new VehicleModelDto
                 {
                     Id = vehicle.Model.Id,
-                    Name = currentCulture == "ar" ? vehicle.Model.NameAr : vehicle.Model.NameEn
+                    Name = vehicle.Model.NameEn ?? string.Empty
                 } : null
             };
         }

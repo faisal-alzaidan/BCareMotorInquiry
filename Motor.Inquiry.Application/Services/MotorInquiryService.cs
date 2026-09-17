@@ -1,12 +1,13 @@
-﻿using System.Collections.Generic;
-using System.Text.Json;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Caching.Distributed;
+﻿using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Options;
 using Motor.Inquiry.Application.Common.Exceptions;
 using Motor.Inquiry.Application.DTOs;
 using Motor.Inquiry.Application.Interfaces;
 using Motor.Inquiry.Application.Resources;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace Motor.Inquiry.Application.Services
 {
@@ -65,7 +66,8 @@ namespace Motor.Inquiry.Application.Services
                 // 3. Save the response in Redis with a 30-day expiration (TTL)
                 var cacheOptions = new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = System.TimeSpan.FromDays(30)
+                    //AbsoluteExpirationRelativeToNow = System.TimeSpan.FromDays(30)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(5)
                 };
 
                 var serializedData = JsonSerializer.Serialize(vehicleDetails);
