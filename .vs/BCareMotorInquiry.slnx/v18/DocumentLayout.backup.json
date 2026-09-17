@@ -3,48 +3,51 @@
   "WorkspaceRootPath": "C:\\aspnetcore\\BCareMotorInquiry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\services\\yaqeenhttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\services\\yaqeenhttpclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.application\\services\\motorinquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|solutionrelative:motor.inquiry.application\\services\\motorinquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\persistence\\configurations\\vehicleconfiguration.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\persistence\\configurations\\vehicleconfiguration.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\persistence\\configurations\\citizenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\persistence\\configurations\\citizenconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\persistence\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.application\\interfaces\\ivehicleinquirycacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|solutionrelative:motor.inquiry.application\\interfaces\\ivehicleinquirycacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\repositories\\vehicleinquirycacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\repositories\\vehicleinquirycacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|solutionrelative:motor.inquiry.api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E0744EA-86D1-47CF-89C0-1A526D98C957}|Motor.Inquiry.API\\Motor.Inquiry.API.csproj|solutionrelative:motor.inquiry.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\falzaidan\\AppData\\Roaming\\Microsoft\\UserSecrets\\d84b657a-9642-43d4-bac1-9d63f3258804\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.application\\services\\insuranceofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|solutionrelative:motor.inquiry.application\\services\\insuranceofferservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.application\\services\\inquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|solutionrelative:motor.inquiry.application\\services\\inquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\extensions\\databaseextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.application\\interfaces\\imotorinquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4C0D179-A9D0-3868-9EA3-085AAAF3A8EC}|Motor.Inquiry.Application\\Motor.Inquiry.Application.csproj|solutionrelative:motor.inquiry.application\\interfaces\\imotorinquiryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.api\\filters\\apikeyauthattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC404F76-18EB-4FCE-B05B-DBCFFFFE72E9}|Yaqeen.API\\Yaqeen.API.csproj|solutionrelative:yaqeen.api\\filters\\apikeyauthattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\motor.inquiry.infrastructure\\settings\\yaqeensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B93F782-B041-D2EE-6A57-CF48E8639368}|Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj|solutionrelative:motor.inquiry.infrastructure\\settings\\yaqeensettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\persistence\\configurations\\addressconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\persistence\\configurations\\addressconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|c:\\aspnetcore\\bcaremotorinquiry\\yaqeen.infrastructure\\services\\vehiclelookupcacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F38DF821-C1D3-3C81-AD70-92C17F2BCE3C}|Yaqeen.Infrastructure\\Yaqeen.Infrastructure.csproj|solutionrelative:yaqeen.infrastructure\\services\\vehiclelookupcacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +57,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,151 +84,153 @@
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehicleConfiguration.cs.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\VehicleConfiguration.cs.cs",
+              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Persistence\\Configurations\\VehicleConfiguration.cs.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\VehicleConfiguration.cs.cs",
+              "RelativeToolTip": "Yaqeen.Infrastructure\\Persistence\\Configurations\\VehicleConfiguration.cs.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T07:03:36.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CitizenConfiguration.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\CitizenConfiguration.cs",
+              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Persistence\\Configurations\\CitizenConfiguration.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\CitizenConfiguration.cs",
+              "RelativeToolTip": "Yaqeen.Infrastructure\\Persistence\\Configurations\\CitizenConfiguration.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T07:03:03.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T07:00:35.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IVehicleInquiryCacheRepository.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Interfaces\\IVehicleInquiryCacheRepository.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Application\\Interfaces\\IVehicleInquiryCacheRepository.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Interfaces\\IVehicleInquiryCacheRepository.cs",
+              "RelativeToolTip": "Motor.Inquiry.Application\\Interfaces\\IVehicleInquiryCacheRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T07:00:02.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\falzaidan\\AppData\\Roaming\\Microsoft\\UserSecrets\\d84b657a-9642-43d4-bac1-9d63f3258804\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\Users\\falzaidan\\AppData\\Roaming\\Microsoft\\UserSecrets\\d84b657a-9642-43d4-bac1-9d63f3258804\\secrets.json",
+              "ToolTip": "C:\\Users\\falzaidan\\AppData\\Roaming\\Microsoft\\UserSecrets\\d84b657a-9642-43d4-bac1-9d63f3258804\\secrets.json",
+              "RelativeToolTip": "..\\..\\Users\\falzaidan\\AppData\\Roaming\\Microsoft\\UserSecrets\\d84b657a-9642-43d4-bac1-9d63f3258804\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-17T06:52:04.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Motor.Inquiry.API\\appsettings.json",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\appsettings.json",
+              "RelativeToolTip": "Motor.Inquiry.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-17T06:49:21.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ApplicationServiceExtensions.cs",
               "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\Extensions\\ApplicationServiceExtensions.cs",
               "RelativeDocumentMoniker": "Motor.Inquiry.API\\Extensions\\ApplicationServiceExtensions.cs",
               "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.API\\Extensions\\ApplicationServiceExtensions.cs",
               "RelativeToolTip": "Motor.Inquiry.API\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T08:08:26.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Program.cs",
-              "RelativeDocumentMoniker": "Yaqeen.API\\Program.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Program.cs",
-              "RelativeToolTip": "Yaqeen.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T08:06:02.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Yaqeen.API\\appsettings.Development.json",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\appsettings.Development.json",
-              "RelativeToolTip": "Yaqeen.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-07T08:05:47.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Yaqeen.API\\appsettings.json",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\appsettings.json",
-              "RelativeToolTip": "Yaqeen.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-07T08:05:43.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationServiceExtensions.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Yaqeen.API\\Extensions\\ApplicationServiceExtensions.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeToolTip": "Yaqeen.API\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T08:03:31.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseExtensions.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Extensions\\DatabaseExtensions.cs",
-              "RelativeDocumentMoniker": "Yaqeen.API\\Extensions\\DatabaseExtensions.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Extensions\\DatabaseExtensions.cs",
-              "RelativeToolTip": "Yaqeen.API\\Extensions\\DatabaseExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T08:03:04.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IMotorInquiryService.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Interfaces\\IMotorInquiryService.cs",
-              "RelativeDocumentMoniker": "Motor.Inquiry.Application\\Interfaces\\IMotorInquiryService.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Interfaces\\IMotorInquiryService.cs",
-              "RelativeToolTip": "Motor.Inquiry.Application\\Interfaces\\IMotorInquiryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T08:02:49.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApiKeyAuthAttribute.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Filters\\ApiKeyAuthAttribute.cs",
-              "RelativeDocumentMoniker": "Yaqeen.API\\Filters\\ApiKeyAuthAttribute.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.API\\Filters\\ApiKeyAuthAttribute.cs",
-              "RelativeToolTip": "Yaqeen.API\\Filters\\ApiKeyAuthAttribute.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T07:57:31.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T06:47:58.251Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "YaqeenHttpClientService.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
-              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
-              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Services\\YaqeenHttpClientService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBAAAAA/AAAAAAAAAA==",
+              "Title": "MotorInquiryService.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\MotorInquiryService.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Application\\Services\\MotorInquiryService.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\MotorInquiryService.cs",
+              "RelativeToolTip": "Motor.Inquiry.Application\\Services\\MotorInquiryService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T07:53:24.253Z",
+              "WhenOpened": "2026-09-17T06:39:07.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "YaqeenSettings.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
-              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
-              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Settings\\YaqeenSettings.cs",
+              "Title": "InsuranceOfferService.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\InsuranceOfferService.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Application\\Services\\InsuranceOfferService.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\InsuranceOfferService.cs",
+              "RelativeToolTip": "Motor.Inquiry.Application\\Services\\InsuranceOfferService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T07:53:06.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T06:39:06.768Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AddressConfiguration.cs",
-              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\AddressConfiguration.cs",
-              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Persistence\\Configurations\\AddressConfiguration.cs",
-              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Persistence\\Configurations\\AddressConfiguration.cs",
-              "RelativeToolTip": "Yaqeen.Infrastructure\\Persistence\\Configurations\\AddressConfiguration.cs",
-              "ViewState": "AgIAAAEAAABAuJBHcJ0wwAsAAAAAAAAAAAAAAA==",
+              "Title": "InquiryService.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\InquiryService.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Application\\Services\\InquiryService.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Application\\Services\\InquiryService.cs",
+              "RelativeToolTip": "Motor.Inquiry.Application\\Services\\InquiryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T07:47:03.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-17T06:39:03.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VehicleLookupCacheService.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Services\\VehicleLookupCacheService.cs",
+              "RelativeDocumentMoniker": "Yaqeen.Infrastructure\\Services\\VehicleLookupCacheService.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Yaqeen.Infrastructure\\Services\\VehicleLookupCacheService.cs",
+              "RelativeToolTip": "Yaqeen.Infrastructure\\Services\\VehicleLookupCacheService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T06:37:02.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VehicleInquiryCacheRepository.cs",
+              "DocumentMoniker": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Repositories\\VehicleInquiryCacheRepository.cs",
+              "RelativeDocumentMoniker": "Motor.Inquiry.Infrastructure\\Repositories\\VehicleInquiryCacheRepository.cs",
+              "ToolTip": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Repositories\\VehicleInquiryCacheRepository.cs",
+              "RelativeToolTip": "Motor.Inquiry.Infrastructure\\Repositories\\VehicleInquiryCacheRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwEUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T06:35:49.536Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

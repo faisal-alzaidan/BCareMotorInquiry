@@ -1,4 +1,7 @@
-﻿using Motor.Inquiry.Application.Interfaces;
+﻿using System;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Motor.Inquiry.Application.Interfaces;
 using Motor.Inquiry.Application.Services;
 using Motor.Inquiry.Infrastructure.Repositories;
 using Motor.Inquiry.Infrastructure.Services;
@@ -10,12 +13,18 @@ namespace Motor.Inquiry.API.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
-            // Services & Repositories
+            // Services & Repositories 
             services.AddScoped<IInsuranceOfferService, InsuranceOfferService>();
             services.AddScoped<IMotorInquiryService, MotorInquiryService>();
             services.AddScoped<IInquiryHistoryService, InquiryHistoryRepository>();
             services.AddScoped<IInquiryService, InquiryService>();
-            services.AddScoped<IVehicleInquiryCacheRepository, VehicleInquiryCacheRepository>();
+
+            // Redis Distributed Cache Configuration
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = configuration.GetConnectionString("Redis") ?? "localhost:6379";
+                options.InstanceName = "MotorInquiry_";
+            });
 
             // Options & HttpClient
             services.Configure<YaqeenSettings>(configuration.GetSection("YaqeenSettings"));
@@ -23,7 +32,6 @@ namespace Motor.Inquiry.API.Extensions
             {
                 client.BaseAddress = new Uri("http://localhost:5250/");
             });
-
 
             return services;
         }

@@ -10,3 +10,4 @@ C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Domain\obj\Debug\net10.0\Motor.Inq
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Domain\obj\Debug\net10.0\refint\Motor.Inquiry.Domain.dll
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Domain\obj\Debug\net10.0\Motor.Inquiry.Domain.pdb
 C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Domain\obj\Debug\net10.0\ref\Motor.Inquiry.Domain.dll
+C:\aspnetcore\BCareMotorInquiry\Motor.Inquiry.Domain\obj\Debug\net10.0\Motor.In.39766C65.Up2Date

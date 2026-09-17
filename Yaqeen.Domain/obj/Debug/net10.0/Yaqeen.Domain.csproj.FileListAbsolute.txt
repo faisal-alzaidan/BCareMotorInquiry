@@ -10,3 +10,4 @@ C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.dl
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\refint\Yaqeen.Domain.dll
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.Domain.pdb
 C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\ref\Yaqeen.Domain.dll
+C:\aspnetcore\BCareMotorInquiry\Yaqeen.Domain\obj\Debug\net10.0\Yaqeen.D.66C2C12E.Up2Date

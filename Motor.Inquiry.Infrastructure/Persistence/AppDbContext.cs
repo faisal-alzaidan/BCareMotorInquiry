@@ -14,6 +14,5 @@ namespace Motor.Inquiry.Infrastructure.Persistence
         }
 
         public DbSet<InquiryHistory> InquiryHistories { get; set; } = null!;
-        public DbSet<VehicleInquiryCache> VehicleInquiryCaches { get; set; }
     }
 }

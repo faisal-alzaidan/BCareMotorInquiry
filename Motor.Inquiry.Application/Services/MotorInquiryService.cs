@@ -1,76 +1,78 @@
 ﻿using System.Collections.Generic;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Localization;
 using Motor.Inquiry.Application.Common.Exceptions;
 using Motor.Inquiry.Application.DTOs;
 using Motor.Inquiry.Application.Interfaces;
-using Microsoft.Extensions.Localization;
 using Motor.Inquiry.Application.Resources;
 
 namespace Motor.Inquiry.Application.Services
-
 {
     public class MotorInquiryService : IMotorInquiryService
     {
-
         private readonly IYaqeenClientService _yaqeenClientService;
         private readonly IInsuranceOfferService _insuranceOfferService;
-        private readonly IVehicleInquiryCacheRepository _cacheRepository;
+        private readonly IDistributedCache _distributedCache;
         private readonly IStringLocalizer<SharedResource> _localizer;
 
         public MotorInquiryService(
-
-        IYaqeenClientService yaqeenClientService,
-        IInsuranceOfferService insuranceOfferService,
-        IVehicleInquiryCacheRepository cacheRepository,
-        IStringLocalizer<SharedResource> localizer)
-
+            IYaqeenClientService yaqeenClientService,
+            IInsuranceOfferService insuranceOfferService,
+            IDistributedCache distributedCache,
+            IStringLocalizer<SharedResource> localizer)
         {
             _yaqeenClientService = yaqeenClientService;
             _insuranceOfferService = insuranceOfferService;
-            _cacheRepository = cacheRepository;
+            _distributedCache = distributedCache;
             _localizer = localizer;
-
         }
-        public async Task<ApiResponse<MotorInquiryResponseDto>> ProcessInquiryAsync(MotorInquiryRequestDto request)
 
+        public async Task<ApiResponse<MotorInquiryResponseDto>> ProcessInquiryAsync(MotorInquiryRequestDto request)
         {
             var isCitizenValid = await _yaqeenClientService.ValidateCitizenAsync(request.NationalId, request.DateOfBirth);
 
             if (!isCitizenValid)
-
             {
                 throw new BadRequestException(_localizer["Invalid National ID or Date of Birth."]);
             }
 
-            // Check cache for existing response using the flexible cacheKey
+            // Create a unique cache key based on vehicle identifiers
+            string cacheKey = $"motor_inquiry_{request.SequenceNumber}_{request.PlateLetters}_{request.PlateNumber}";
 
-            var vehicleDetails = await _cacheRepository.GetCachedResponseAsync(request.SequenceNumber,request.PlateLetters,request.PlateNumber);
+            VehicleDetailsDto? vehicleDetails = null;
 
-            // if not found in cache, fetch from external service
+            // 1. Check Redis Cache first
+            var cachedData = await _distributedCache.GetStringAsync(cacheKey);
+            if (!string.IsNullOrEmpty(cachedData))
+            {
+                vehicleDetails = JsonSerializer.Deserialize<VehicleDetailsDto>(cachedData);
+            }
 
+            // 2. If not found in Redis, fetch from external service (Yaqeen)
             if (vehicleDetails == null)
-
             {
                 var yaqeenResponse = await _yaqeenClientService.VerifyVehicleAsync(request);
 
                 if (!yaqeenResponse.Success || yaqeenResponse.Data == null)
-
                 {
-
                     throw new NotFoundException(_localizer["VehicleNotFound"]);
-
                 }
 
                 vehicleDetails = yaqeenResponse.Data;
 
-                // save the response in the cache using the flexible cacheKey
+                // 3. Save the response in Redis with a 30-day expiration (TTL)
+                var cacheOptions = new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = System.TimeSpan.FromDays(30)
+                };
 
-                await _cacheRepository.SetCacheAsync(request.SequenceNumber,request.PlateLetters, request.PlateNumber, vehicleDetails);
-
+                var serializedData = JsonSerializer.Serialize(vehicleDetails);
+                await _distributedCache.SetStringAsync(cacheKey, serializedData, cacheOptions);
             }
 
             if (vehicleDetails.OwnerNationalId != request.NationalId)
-
             {
                 throw new BadRequestException(_localizer["OwnershipMismatch"]);
             }
@@ -78,32 +80,25 @@ namespace Motor.Inquiry.Application.Services
             var insuranceOffers = _insuranceOfferService.GetOffersForVehicle(vehicleDetails);
 
             return CreateResponse(
-
-            success: true,
-            message: _localizer["VehicleFetchedSuccess"],
-            vehicle: vehicleDetails,
-            offers: insuranceOffers
-
+                success: true,
+                message: _localizer["VehicleFetchedSuccess"],
+                vehicle: vehicleDetails,
+                offers: insuranceOffers
             );
-
         }
-        private static ApiResponse<MotorInquiryResponseDto> CreateResponse(bool success, string message, VehicleDetailsDto? vehicle, List<InsuranceOfferDto> offers)
 
+        private static ApiResponse<MotorInquiryResponseDto> CreateResponse(bool success, string message, VehicleDetailsDto? vehicle, List<InsuranceOfferDto> offers)
         {
             return new ApiResponse<MotorInquiryResponseDto>
             {
                 Success = success,
                 Message = message,
                 Data = new MotorInquiryResponseDto
-
                 {
                     Vehicle = vehicle,
                     InsuranceOffers = offers
                 }
-
             };
-
         }
-
     }
 }

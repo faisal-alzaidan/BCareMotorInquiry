@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Lamw/+gZIKE=",
+  "dgSpecHash": "+lk3vDwQLbQ=",
   "success": true,
   "projectFilePath": "C:\\aspnetcore\\BCareMotorInquiry\\Motor.Inquiry.Infrastructure\\Motor.Inquiry.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.11\\microsoft.entityframeworkcore.design.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.11\\microsoft.entityframeworkcore.relational.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.11\\microsoft.entityframeworkcore.sqlserver.10.0.11.nupkg.sha512",
-    "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.11\\microsoft.extensions.caching.abstractions.10.0.11.nupkg.sha512",
+    "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\10.0.12\\microsoft.extensions.caching.abstractions.10.0.12.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.11\\microsoft.extensions.caching.memory.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.11\\microsoft.extensions.configuration.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.11\\microsoft.extensions.configuration.abstractions.10.0.11.nupkg.sha512",
@@ -44,7 +44,7 @@
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.logging\\10.0.11\\microsoft.extensions.logging.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.11\\microsoft.extensions.logging.abstractions.10.0.11.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.options\\10.0.11\\microsoft.extensions.options.10.0.11.nupkg.sha512",
-    "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.11\\microsoft.extensions.primitives.10.0.11.nupkg.sha512",
+    "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.12\\microsoft.extensions.primitives.10.0.12.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.identity.client\\4.84.2\\microsoft.identity.client.4.84.2.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.identity.client.broker\\4.84.2\\microsoft.identity.client.broker.4.84.2.nupkg.sha512",
     "C:\\Users\\falzaidan\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.78.0\\microsoft.identity.client.extensions.msal.4.78.0.nupkg.sha512",
